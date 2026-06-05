@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一篇博客</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; }
+        .image-container { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+<h1>利用Github发布个人博客</h1>
+<p>作者：你的名字 | 日期：202X年X月X日</p>
+<hr>
+<p>这是我的第一篇博客，用来测试相对路径和绝对路径加载图片的功能。</p>
+
+<div class="image-container">
+    <h3>1. 这是使用“绝对路径”引入的图片：</h3>
+    <p>直接通过完整的网络URL地址访问</p>
+    <!-- 绝对路径：引用网络上的图片资源 -->
+    <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png" alt="绝对路径图片">
+</div>
+
+<div class="image-container">
+    <h3>2. 这是使用“相对路径”引入的图片：</h3>
+    <p>通过 ../image/1.png 返回上一级目录寻找图片</p>
+    <!-- 相对路径：因为当前文件在pages文件夹里，所以用 ../ 退回根目录，再进入 image 文件夹 -->
+    <img src="../image/1.png" alt="相对路径本地图片">
+</div>
+
+<br>
+<a href="../index.html">返回首页</a>
+</body>
+</html>
